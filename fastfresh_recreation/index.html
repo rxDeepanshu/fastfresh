@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#06110e" />
+  <title>FastFresh — Speed Freshness Fintech</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="phone">
+    <div class="status-bar">
+      <span>9:41</span>
+      <div class="status-icons"><span class="signal">▮▮▮</span><span class="wifi">⌁</span><span class="battery"></span></div>
+    </div>
+
+    <header class="top-header">
+      <div class="brand">
+        <div class="brand-mark">₹<b>F</b><i>➜</i></div>
+        <div><div class="brand-name">FastFresh</div><small>SPEED FRESHNESS • FINTECH</small></div>
+      </div>
+      <div class="header-actions">
+        <button class="icon-button notification" aria-label="Notifications">♧<span></span></button>
+        <button class="avatar" aria-label="Profile"><span></span></button>
+      </div>
+    </header>
+
+    <button class="delivery">
+      <span class="pin">●</span><span><small>Deliver to</small><strong>Home - 221001</strong></span><b>⌄</b>
+    </button>
+
+    <label class="search">
+      <span class="search-icon"></span><input type="search" placeholder="Search anything in seconds..." />
+      <button aria-label="Voice search">♩</button>
+    </label>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p>Everything You Need</p>
+        <h1>Delivered in<br><em>Minutes!</em></h1>
+        <div class="hero-tags">Groceries • Food • Electronics<br>UPI &amp; Wallet • Fast Food</div>
+        <button class="order-button" id="orderNow">Order Now <b>→</b></button>
+      </div>
+      <img src="assets/hero.png" alt="Fast delivery groceries and stopwatch" />
+    </section>
+
+    <section class="category-grid" aria-label="Shopping categories">
+      <button class="category-card small-card" data-category="Groceries">
+        <img src="assets/groceries.png" alt="" /><strong>Groceries</strong><small>Fresh &amp; Healthy</small><i>›</i>
+      </button>
+      <button class="category-card small-card" data-category="Package Food">
+        <img src="assets/package-food.png" alt="" /><strong>Package Food</strong><small>Tasty &amp; Hygienic</small><i>›</i>
+      </button>
+      <button class="category-card small-card" data-category="Electronics">
+        <img src="assets/electronics.png" alt="" /><strong>Electronics</strong><small>Latest Tech</small><i>›</i>
+      </button>
+      <button class="category-card wide-card" data-category="Fast Food">
+        <img src="assets/fast-food.png" alt="" /><strong>Fast Food</strong><small>Crave it. Get it.</small><i>›</i>
+      </button>
+      <button class="category-card wide-card" data-category="UPI & Wallet">
+        <img src="assets/upi-wallet.png" alt="" /><strong>UPI &amp; Wallet</strong><small>Pay, Recharge, More</small><i>›</i>
+      </button>
+    </section>
+
+    <section class="benefits">
+      <div><b class="bolt">ϟ</b><span>Lightning<br>Fast Delivery</span></div>
+      <div><b class="shield">♢</b><span>Safe &amp; Secure<br>Payments</span></div>
+      <div><b class="support">♧</b><span>24/7 Support</span></div>
+      <div><b class="gift">♔</b><span>Exclusive<br>Offers</span></div>
+    </section>
+
+    <section class="popular">
+      <div class="section-heading"><h2>Popular Choices</h2><button id="seeAll">See All <b>→</b></button></div>
+      <div class="popular-grid">
+        <button class="popular-card" data-category="Fresh Groceries"><img src="assets/popular-groceries.png" alt="" /><span>Fresh Groceries</span></button>
+        <button class="popular-card" data-category="Burger & More"><img src="assets/popular-burger.png" alt="" /><span>Burger &amp; More</span></button>
+        <button class="popular-card" data-category="Smartphones"><img src="assets/popular-phone.png" alt="" /><span>Smartphones</span></button>
+        <button class="popular-card" data-category="Pizza"><img src="assets/popular-pizza.png" alt="" /><span>Pizza</span></button>
+      </div>
+    </section>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-tab="Home"><span>◆</span><small>Home</small></button>
+      <button class="nav-item" data-tab="Categories"><span>▦</span><small>Categories</small></button>
+      <button class="nav-item" data-tab="Orders"><span>▤</span><small>Orders</small></button>
+      <button class="nav-item" data-tab="Wallet"><span>▱</span><small>Wallet</small></button>
+      <button class="cart-button" aria-label="Cart"><span>🛒</span><b id="cartCount">2</b></button>
+    </nav>
+    <div class="home-indicator"></div>
+    <div class="toast" id="toast" role="status"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
